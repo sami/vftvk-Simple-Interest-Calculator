@@ -10,7 +10,6 @@ body {
 .maindiv {
     background-color: white;
     color: black;
-    width: 300px;
     padding: 20px;
     border-radius: 25px;
     margin: 20%;
@@ -22,6 +21,7 @@ h1 {
 }
 
 form {
+    margin: 0 20%;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
