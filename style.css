@@ -1,25 +1,27 @@
 body {
     background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main {
+.maindiv {
     background-color: white;
+    color: black;
+    width: 300px;
     padding: 20px;
-    border-radius: 20px;
-    font-family: sans-serif;
-    margin: 20%;
+    border-radius: 25px;
+    margin: 0 auto;
 }
 
 h1 {
     color: grey;
-    font-family: serif;
+    font-family: Verdana, serif;
 }
 
 form {
-    margin: 0 20%;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
