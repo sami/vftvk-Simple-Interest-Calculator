@@ -7,11 +7,16 @@ function compute()
     let endYear = currentYear + years;
     let result = (principal * rate * years) / 100
 
-    document.getElementById("result").innerHTML =
-        "            If you deposit <mark>" + principal + "</mark>,<br>\n" +
-        "            at an interest rate of <mark>" + rate + "%</mark>.<br>\n" +
-        "            You will receive an amount of <mark>" + result + "</mark>,<br>\n" +
-        "            in the year <mark>" + endYear + "</mark>";
+    if (isNaN(principal) || principal < 0) {
+        alert("Please enter a positive number");
+        document.getElementById("principal").focus();
+    } else {
+        document.getElementById("result").innerHTML =
+            "            If you deposit <mark>" + principal + "</mark>,<br>\n" +
+            "            at an interest rate of <mark>" + rate + "%</mark>.<br>\n" +
+            "            You will receive an amount of <mark>" + result + "</mark>,<br>\n" +
+            "            in the year <mark>" + endYear + "</mark>";
+    }
 }
 
 function rangeDisplay() {
