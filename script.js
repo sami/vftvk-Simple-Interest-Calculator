@@ -5,7 +5,7 @@ function compute()
     let years = parseInt(document.getElementById("years").value);
     let interest = principal * years * rate / 100;
     let currentYear = new Date().getFullYear();
-    let futureYear = currentYear + years - 1;
+    let futureYear = currentYear + years;
 
     if (isNaN(principal) || principal <= 0) {
         alert("Enter a positive number");
